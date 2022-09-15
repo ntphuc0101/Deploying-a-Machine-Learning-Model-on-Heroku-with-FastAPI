@@ -2,6 +2,7 @@
     remote = remote
 ['remote "remote"']
     url = s3://herokudeploy
+    credentialpath = /Users/ntphuc/.aws/credentials
 ['remote "myremote"']
     url = s3://herokudeploy
     credentialpath = /Users/ntphuc/.aws/credentials
