@@ -1,6 +1,7 @@
 [core]
     remote = remote
+    hardlink_lock = false
 ['remote "remote"']
-    url = s3://herokudeploy/fe
+    url = s3://herokudeploy/
     access_key_id = AKIAYEJTDB4QTKDWPQWI
     secret_access_key = 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

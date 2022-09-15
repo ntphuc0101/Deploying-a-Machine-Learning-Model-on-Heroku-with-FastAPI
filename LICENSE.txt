@@ -14,7 +14,7 @@ Udacity expressly defines the following as falling outside the definition of
 (a) the sale or rental of (i) any part of the Educational Content, (ii) any
     derivative works based at least in part on the Educational Content, or (iii)
     any collective work that includes any part of the Educational Content;
-(b) the sale of access or a link to any part of the Educational Content without
+(b) the sale of access or a link to any part of the Educational Content without 
     first obtaining informed consent from the buyer (that the buyer is aware
     that the Educational Content, or such part thereof, is available at the
     Website free of charge);
