@@ -1,6 +1,6 @@
 [core]
     remote = remote
 ['remote "remote"']
-    url = s3://herokudeploy
+    url = s3://herokudeploy/fe
     access_key_id = AKIAYEJTDB4QTKDWPQWI
     secret_access_key = 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
