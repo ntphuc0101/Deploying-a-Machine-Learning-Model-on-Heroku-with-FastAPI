@@ -61,7 +61,6 @@ async def send():
     "/inference",
     summary="Predict API endpoint",
     description="predict classification result for Census data",
-    response_model=CensusResponse,
 )
 async def predict(data: Data_Frame):
     cat_features = [
