@@ -40,9 +40,21 @@ class Data_Frame(BaseModel):
 
 
 
-@app.get("/")
-async def default():
-    return "[Info] This Get method for FastAPI inference."
+# @app.get("/")
+# async def default():
+#     return "[Info] This Get method for FastAPI inference."
+
+@app.get("/", summary="Root path API", description="Census prediction API")
+async def root():
+    return {"message": "Hello there!"}
+
+
+@app.get(
+    "/send", summary="Test endpoint response", description="Should expect reception"
+)
+async def send():
+    return {"send": "well received"}
+
 
 @app.post('/inference')
 async def predict(data: Data_Frame):
