@@ -56,7 +56,13 @@ async def send():
     return {"send": "well received"}
 
 
-@app.post('/inference')
+
+@app.post(
+    "/inference",
+    summary="Predict API endpoint",
+    description="predict classification result for Census data",
+    response_model=CensusResponse,
+)
 async def predict(data: Data_Frame):
     cat_features = [
         "workclass",
