@@ -7,7 +7,7 @@ def query_api(url, data):
     output_request = requests.post(url, json=data)
     if output_request.status_code == 200:
         return output_request.status_code, output_request.json()
-    return output.status_code, None
+    return output_request.status_code, None
 
 
 def data_frame_greater_than_50k():
@@ -49,7 +49,7 @@ def data_frame_smarter_than_50k():
     return df_data
 
 if __name__ == '__main__':
-    url_request = "https://herokuwithfastapi.herokuapp.com"
+    url_request = "https://herokuwithfastapi.herokuapp.com/inference"
     print("url app {0}", url_request)
     print("[info] testing dataframe smaller than 50k")
     df_frame = data_frame_smarter_than_50k()
