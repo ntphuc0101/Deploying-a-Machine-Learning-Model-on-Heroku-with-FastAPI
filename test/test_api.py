@@ -26,7 +26,7 @@ def test_get_method():
     assert r.status_code != 200
 
 
-def test_post(data_frame_greater_than_50k, data_frame_smarter_than_50k):
+def test_post_greater_50k(data_frame_greater_than_50k):
 
     print("[info] check post method return output which is greater than 50k")
     request = client_app.post('/inference', json = data_frame_greater_than_50k)
@@ -34,9 +34,12 @@ def test_post(data_frame_greater_than_50k, data_frame_smarter_than_50k):
     assert "output" in request.json()
     assert request.json()["output"] == ">50K"
 
+
+
+def test_post_smaller_50k(data_frame_smarter_than_50k):
+
     print("[info] check post method return output which is smaller than 50k")
     request = client_app.post('/inference', json = data_frame_smarter_than_50k)
     assert request.status_code == 200
     assert "output" in request.json()
     assert request.json()["output"] == "<=50K"
-

@@ -11,7 +11,7 @@ from train_script.ml.model import inference
 
 if "DYNO" in os.environ and os.path.isdir(".dvc"):
     os.system("dvc config core.no_scm true")
-    if os.system("dvc pull") != 0:
+    if os.system("dvc pull -f") != 0:
         exit("dvc pull failed")
     os.system("rm -r .dvc .apt/usr/lib/dvc")
 
@@ -46,7 +46,7 @@ class Data_Frame(BaseModel):
 
 @app.get("/", summary="Root path API", description="Census prediction API")
 async def root():
-    return {"message": "Hello there!"}
+    return "[Info] This Get method for FastAPI inference."
 
 
 @app.get(
