@@ -1,15 +1,13 @@
 from fastapi.testclient import TestClient
 import sys
 import os
+from main import app
+
 
 path_ab = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../train_script')
 sys.path.append(path_ab)
 
 print("[info] working dir is {0}".format(path_ab))
-
-
-from main import app
-
 
 client_app = TestClient(app)
 print("[info] creating the working app")

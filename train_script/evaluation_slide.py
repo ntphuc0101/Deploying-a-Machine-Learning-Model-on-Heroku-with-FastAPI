@@ -2,17 +2,13 @@
 written by Nguyen Thai Vinh Phuc
 This file is used to slide data on each feature and do inference tasks to check performance of the model
 """
-"""
-"""
 from collections import defaultdict
 import pandas as pd
 import joblib
 import json
-
-
-
 from ml.data import process_data
 from ml.model import inference, compute_model_metrics
+
 
 def test_on_slice(model, encoder, lb, data, cat_feature, slice_value):
     """
@@ -32,8 +28,7 @@ def test_on_slice(model, encoder, lb, data, cat_feature, slice_value):
     sliced_data = data[data[cat_feature] == slice_value]
 
     X_test, y_test, encoder, lb = process_data(
-        sliced_data, categorical_features=cat_features, label="salary", training=False, encoder=encoder, lb=lb
-    )
+        sliced_data, categorical_features=cat_features, label="salary", training=False, encoder=encoder, lb=lb)
 
     preds = inference(model=model, X=X_test)
 
@@ -64,7 +59,8 @@ if __name__ == '__main__':
 
     for cat_feature in cat_features:
         for slice_value in data[cat_feature].unique():
-            precision, recall, fbeta = test_on_slice(model, encoder, lb, data, cat_feature, slice_value)
+            precision, recall, fbeta = test_on_slice(
+                model, encoder, lb, data, cat_feature, slice_value)
             data_slide_scores[cat_feature].append(
                 {
                     "feature name": cat_feature,
@@ -76,6 +72,7 @@ if __name__ == '__main__':
             )
 
     data_slide_result = "evaluation_slice_data_new.json"
-    print("[info] saving slide data evaluation of the model - {0}".format(data_slide_result))
+    print(
+        "[info] saving slide data evaluation of the model - {0}".format(data_slide_result))
     with open(data_slide_result, "w") as f:
         json.dump(obj=data_slide_scores, fp=f, indent=5)

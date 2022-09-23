@@ -5,10 +5,12 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from train_script.ml.data import process_data
 
+
 @pytest.fixture(scope='session')
 def data_frame():
     data_path = '../data/census_clean.csv'
     return pd.read_csv(data_path)
+
 
 @pytest.fixture()
 def data_frame_greater_than_50k():
@@ -30,6 +32,7 @@ def data_frame_greater_than_50k():
     }
     return df_data
 
+
 @pytest.fixture()
 def data_frame_smarter_than_50k():
     df_data = {
@@ -49,9 +52,10 @@ def data_frame_smarter_than_50k():
         "native_country": "India"
     }
     return df_data
+
+
 @pytest.fixture()
 def processing_data_train_sample(data_frame):
-
     category_features = [
         "workclass",
         "education",

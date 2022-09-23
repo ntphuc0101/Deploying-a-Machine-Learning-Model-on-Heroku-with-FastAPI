@@ -1,20 +1,20 @@
+from train_script.ml.data import process_data
+import train_script.ml.model as model
 from sklearn.preprocessing import OneHotEncoder, LabelBinarizer
 from sklearn.ensemble import RandomForestClassifier
 import os
 import sys
 import logging
 
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../train_script'))
-
-
-import train_script.ml.model as model
-from train_script.ml.data import process_data
+sys.path.append(
+    os.path.join(
+        os.path.dirname(
+            os.path.abspath(__file__)),
+        '../train_script'))
 
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
-
-
 
 
 def test_process_data(data_frame):
@@ -28,9 +28,8 @@ def test_process_data(data_frame):
         "sex",
         "native-country",
     ]
-    X_train, y_train, encoder, lb = process_data(
-        data_frame.head(10), categorical_features=cat_features, label="salary", training=True
-    )
+    X_train, y_train, encoder, lb = process_data(data_frame.head(
+        10), categorical_features=cat_features, label="salary", training=True)
     logger.info("Testing processing data")
 
     assert len(X_train) == len(y_train)
@@ -52,6 +51,7 @@ def test_train(processing_data_train_sample):
     assert trained_model is not None
     assert isinstance(trained_model, RandomForestClassifier)
 
+
 def test_model_metrics(processing_data_train_sample):
     """
     This function tests are to test the type of metrics.
@@ -62,7 +62,6 @@ def test_model_metrics(processing_data_train_sample):
     trained_model = model.train_model(X_train=X, y_train=y)
 
     predictions = model.inference(trained_model, X)
-
 
     precision, recall, fbeta = model.compute_model_metrics(y, predictions)
     logger.info("Test testing metrics - check precision")

@@ -28,16 +28,17 @@ class Data_Frame(BaseModel):
     fnlgt: int = Field(..., example=215646)
     education: str = Field(..., example="HS-grad")
     education_num: int = Field(..., example=14, alias="education-num")
-    marital_status: str = Field(..., example="Married-civ-spouse", alias="marital-status")
+    marital_status: str = Field(...,
+                                example="Married-civ-spouse",
+                                alias="marital-status")
     occupation: str = Field(..., example="Prof-specialty")
     relationship: str = Field(..., example="Not-in-family")
     race: str = Field(..., example="White")
     sex: str = Field(..., example="Female")
     capital_gain: int = Field(..., example=0, alias="capital-gain")
-    capital_loss: int = Field(..., example=0,  alias="capital-loss")
+    capital_loss: int = Field(..., example=0, alias="capital-loss")
     hours_per_week: int = Field(..., example=40, alias="hours-per-week")
     native_country: str = Field(..., example="India", alias="native_country")
-
 
 
 # @app.get("/")
@@ -49,12 +50,10 @@ async def root():
     return "[Info] This Get method for FastAPI inference."
 
 
-@app.get(
-    "/send", summary="Test endpoint response", description="Should expect reception"
-)
+@app.get("/send", summary="Test endpoint response",
+         description="Should expect reception")
 async def send():
     return {"send": "well received"}
-
 
 
 @app.post(
@@ -73,10 +72,12 @@ async def predict(data: Data_Frame):
         "sex",
         "native_country",
     ]
-    model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), './model/model.pkl')
+    model_path = os.path.join(
+        os.path.dirname(
+            os.path.abspath(__file__)),
+        './model/model.pkl')
 
     model, encoder, lb, metrics = joblib.load(model_path)
-
 
     data_dict = data.dict(by_alias=True)
     # convert data into a dictionary, then a pandas dataframe

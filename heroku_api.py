@@ -2,9 +2,11 @@ import requests
 
 
 def query_api(url, data):
+
     print("[info] here is the url {0}", url)
     print("[info] here is the data {0}", data)
     output_request = requests.post(url, json=data)
+
     if output_request.status_code == 200:
         return output_request.status_code, output_request.json()
     return output_request.status_code, None
@@ -29,6 +31,7 @@ def data_frame_greater_than_50k():
     }
     return df_data
 
+
 def data_frame_smarter_than_50k():
     df_data = {
         "age": 28,
@@ -48,17 +51,16 @@ def data_frame_smarter_than_50k():
     }
     return df_data
 
+
 if __name__ == '__main__':
     url_request = "https://herokuwithfastapi.herokuapp.com/inference"
     print("url app {0}", url_request)
     print("[info] testing dataframe smaller than 50k")
     df_frame = data_frame_smarter_than_50k()
 
-
     status_code, predicted = query_api(url_request, df_frame)
     print("[info] STATUS CODE {0}", status_code)
     print("[info] STATUS CODE {0}", predicted)
-
 
     print("[info] testing dataframe greater than 50k")
     df_frame = data_frame_greater_than_50k()

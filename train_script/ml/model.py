@@ -2,9 +2,8 @@ from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier
 import yaml
 import os
-import sys
 
-# Optional: implement hyperparameter tuning.
+
 def train_model(X_train, y_train):
     """
     Trains a machine learning model and returns it.
@@ -20,7 +19,10 @@ def train_model(X_train, y_train):
     model
         Trained machine learning model.
     """
-    full_path_yaml = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hyper_parameter.yaml")
+    full_path_yaml = os.path.join(
+        os.path.dirname(
+            os.path.abspath(__file__)),
+        "hyper_parameter.yaml")
     with open(full_path_yaml, "r") as stream:
         try:
             rf_config = (yaml.safe_load(stream))
@@ -30,6 +32,7 @@ def train_model(X_train, y_train):
     rf_model.fit(X_train, y_train)
 
     return rf_model
+
 
 def compute_model_metrics(y, preds):
     """
