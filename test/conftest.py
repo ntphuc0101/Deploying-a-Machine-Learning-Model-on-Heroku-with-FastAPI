@@ -2,8 +2,8 @@ import pandas as pd
 import pytest
 import os
 import sys
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from train_script.ml.data import process_data
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
 
 @pytest.fixture(scope='session')

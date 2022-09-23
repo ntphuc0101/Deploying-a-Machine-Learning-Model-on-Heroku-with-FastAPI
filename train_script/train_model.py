@@ -19,7 +19,8 @@ data = pd.read_csv(path_data, index_col=None)
 # Add code to load in the data.
 
 print("[Infor] Splitting data into training and testing set ")
-# Optional enhancement, use K-fold cross validation instead of a train-test split.
+# Optional enhancement, use K-fold
+# cross validation instead of a train-test split.
 train, test = train_test_split(data, test_size=0.20)
 
 cat_features = [
@@ -42,7 +43,8 @@ X_train, y_train, encoder, lb = process_data(
 )
 
 X_test, y_test, encoder, lb = process_data(
-    test, categorical_features=cat_features, label="salary", training=False, encoder=encoder, lb=lb
+    test, categorical_features=cat_features,
+    label="salary", training=False, encoder=encoder, lb=lb
 )
 print("[Infor] Trainging data")
 
@@ -55,16 +57,17 @@ preds = inference(model=model, X=X_test)
 precision, recall, fbeta = compute_model_metrics(y_test, preds)
 
 score_saving_path = './performance_whole_data.json'
-print("[Infor] Saving performace in the data file {0}".format(score_saving_path))
+print("[Infor] Saving performace in the data file {0}"
+      .format(score_saving_path))
 
-with open(score_saving_path , "w") as f:
+with open(score_saving_path, "w") as f:
     json.dump(
         obj={"precision": precision, "recall": recall, "fbeta": fbeta},
         fp=f,
         indent=5,
     )
-
-model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../model/') + 'model.pkl'
+absolute_path = 'os.path.dirname(os.path.abspath(__file__))'
+model_path = os.path.join(absolute_path, '../model/') + 'model.pkl'
 
 print("[Infor] Saving the model in dir {0}".format(model_path))
 

@@ -1,6 +1,7 @@
 """
 written by Nguyen Thai Vinh Phuc
-This file is used to slide data on each feature and do inference tasks to check performance of the model
+This file is used to slide data on each feature and
+do inference tasks to check performance of the model
 """
 from collections import defaultdict
 import pandas as pd
@@ -28,7 +29,8 @@ def test_on_slice(model, encoder, lb, data, cat_feature, slice_value):
     sliced_data = data[data[cat_feature] == slice_value]
 
     X_test, y_test, encoder, lb = process_data(
-        sliced_data, categorical_features=cat_features, label="salary", training=False, encoder=encoder, lb=lb)
+        sliced_data, categorical_features=cat_features,
+        label="salary", training=False, encoder=encoder, lb=lb)
 
     preds = inference(model=model, X=X_test)
 
@@ -73,6 +75,7 @@ if __name__ == '__main__':
 
     data_slide_result = "evaluation_slice_data_new.json"
     print(
-        "[info] saving slide data evaluation of the model - {0}".format(data_slide_result))
+        "[info] saving slide data evaluation of the model "
+        "- {0}".format(data_slide_result))
     with open(data_slide_result, "w") as f:
         json.dump(obj=data_slide_scores, fp=f, indent=5)

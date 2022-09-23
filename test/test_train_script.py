@@ -35,12 +35,14 @@ def test_process_data(data_frame):
     assert len(X_train) == len(y_train)
     assert isinstance(encoder, OneHotEncoder)
     assert isinstance(lb, LabelBinarizer)
-    assert data_frame.isnull().any().all() == False
+    false_value = False
+    assert data_frame.isnull().any().all() == false_value
 
 
 def test_train(processing_data_train_sample):
     """
-    This function tests the capacity of the train_model function to generate the  model.
+    This function tests the capacity of the
+    train_model function to generate the  model.
     """
     X, y, encoder, lb = processing_data_train_sample
 
