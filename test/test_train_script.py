@@ -30,8 +30,9 @@ def test_process_data(data_frame):
     ]
     print(" check file ", data_frame.head(
         10))
+    label = "salary"
     X_train, y_train, encoder, lb = process_data(data_frame.head(
-        10), categorical_features=cat_features, label="salary", training=True,
+        10), categorical_features=cat_features, label=label, training=True,
         encoder=None, lb=None)
     logger.info("Testing processing data")
 
