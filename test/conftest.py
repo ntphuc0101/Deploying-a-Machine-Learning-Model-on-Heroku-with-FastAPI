@@ -67,7 +67,7 @@ def processing_data_train_sample(data_frame):
         data_frame,
         categorical_features=category_features,
         label="salary",
-        training=True,
+        training=False,
         encoder=None,
         lb=None,
     )
