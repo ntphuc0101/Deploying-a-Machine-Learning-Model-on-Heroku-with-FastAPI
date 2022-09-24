@@ -39,36 +39,36 @@ def test_process_data(data_frame):
     assert data_frame.isnull().any().all() == false_value
 
 
-def test_train(processing_data_train_sample):
-    """
-    This function tests the capacity of the
-    train_model function to generate the  model.
-    """
-    X, y, encoder, lb = processing_data_train_sample
-
-    trained_model = model.train_model(X_train=X, y_train=y)
-
-    logger.info("Testing test train")
-
-    assert trained_model is not None
-    assert isinstance(trained_model, RandomForestClassifier)
-
-
-def test_model_metrics(processing_data_train_sample):
-    """
-    This function tests are to test the type of metrics.
-    """
-    logger.info("Test testing metrics")
-
-    X, y, encoder, lb = processing_data_train_sample
-    trained_model = model.train_model(X_train=X, y_train=y)
-
-    predictions = model.inference(trained_model, X)
-
-    precision, recall, fbeta = model.compute_model_metrics(y, predictions)
-    logger.info("Test testing metrics - check precision")
-    assert isinstance(precision, float)
-    logger.info("Test testing metrics - check recall")
-    assert isinstance(recall, float)
-    logger.info("Test testing metrics - check fbeta")
-    assert isinstance(fbeta, float)
+# def test_train(processing_data_train_sample):
+#     """
+#     This function tests the capacity of the
+#     train_model function to generate the  model.
+#     """
+#     X, y, encoder, lb = processing_data_train_sample
+#
+#     trained_model = model.train_model(X_train=X, y_train=y)
+#
+#     logger.info("Testing test train")
+#
+#     assert trained_model is not None
+#     assert isinstance(trained_model, RandomForestClassifier)
+#
+#
+# def test_model_metrics(processing_data_train_sample):
+#     """
+#     This function tests are to test the type of metrics.
+#     """
+#     logger.info("Test testing metrics")
+#
+#     X, y, encoder, lb = processing_data_train_sample
+#     trained_model = model.train_model(X_train=X, y_train=y)
+#
+#     predictions = model.inference(trained_model, X)
+#
+#     precision, recall, fbeta = model.compute_model_metrics(y, predictions)
+#     logger.info("Test testing metrics - check precision")
+#     assert isinstance(precision, float)
+#     logger.info("Test testing metrics - check recall")
+#     assert isinstance(recall, float)
+#     logger.info("Test testing metrics - check fbeta")
+#     assert isinstance(fbeta, float)
