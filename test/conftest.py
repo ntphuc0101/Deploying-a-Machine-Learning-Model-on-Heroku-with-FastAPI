@@ -3,13 +3,13 @@ import pytest
 import os
 from train_script.ml.data import process_data
 
-
+@pytest.fixture(scope="session")
 @pytest.fixture()
 def data_frame():
     absolute_path_data = os.path.dirname(os.path.abspath(__file__))
     data_path_relative = '../data/census_clean.csv'
     data_path = os.path.join(absolute_path_data, data_path_relative)
-    return pd.read_csv(data_path)
+    return pd.read_csv(data_path, nrows=200)
 
 
 @pytest.fixture()
