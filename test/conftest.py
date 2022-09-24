@@ -75,3 +75,22 @@ def processing_data_train_sample(data_frame):
         lb=None,
     )
     return X, y, encoder, lb
+
+
+@pytest.fixture
+def process_data_result(data_frame):
+    category_features = [
+        "workclass",
+        "education",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "native-country",
+    ]
+    X_train, y_train, encoder, lb = process_data(
+        data_frame, categorical_features=category_features,
+        label="salary", training=True
+    )
+    return X_train, y_train, encoder, lb
