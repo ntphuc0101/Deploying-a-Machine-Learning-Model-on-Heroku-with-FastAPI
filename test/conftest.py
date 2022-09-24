@@ -3,7 +3,7 @@ import pytest
 from train_script.ml.data import process_data
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture()
 def data_frame():
     data_path = './data/census_clean.csv'
     return pd.read_csv(data_path)
