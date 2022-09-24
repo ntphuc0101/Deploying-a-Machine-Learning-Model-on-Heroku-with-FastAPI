@@ -64,11 +64,13 @@ def processing_data_train_sample(data_frame):
         "native-country",
     ]
     X, y, encoder, lb = process_data(
-        data_frame,
+        data_frame.head(10),
         categorical_features=category_features,
         label="salary",
-        training=False,
+        training=True,
         encoder=None,
         lb=None,
     )
     return X, y, encoder, lb
+
+
