@@ -72,6 +72,3 @@ def processing_data_train_sample(data_frame):
         lb=None,
     )
     return X, y, encoder, lb
-
-
-
