@@ -1,7 +1,7 @@
 from train_script.ml.data import process_data
-import train_script.ml.model as model
+# import train_script.ml.model as model
 from sklearn.preprocessing import OneHotEncoder, LabelBinarizer
-from sklearn.ensemble import RandomForestClassifier
+# from sklearn.ensemble import RandomForestClassifier
 import os
 import sys
 import logging
