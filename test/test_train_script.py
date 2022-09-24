@@ -29,7 +29,8 @@ def test_process_data(data_frame):
         "native-country",
     ]
     X_train, y_train, encoder, lb = process_data(data_frame.head(
-        10), categorical_features=cat_features, label="salary", training=True)
+        10), categorical_features=cat_features, label="salary", training=True,
+        encoder=None, lb=None)
     logger.info("Testing processing data")
 
     assert len(X_train) == len(y_train)
