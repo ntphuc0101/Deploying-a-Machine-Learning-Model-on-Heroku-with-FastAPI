@@ -3,8 +3,8 @@ import pytest
 import os
 from train_script.ml.data import process_data
 
+
 @pytest.fixture(scope="session")
-@pytest.fixture()
 def data_frame():
     absolute_path_data = os.path.dirname(os.path.abspath(__file__))
     data_path_relative = '../data/census_clean.csv'
