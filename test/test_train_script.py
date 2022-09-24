@@ -28,6 +28,8 @@ def test_process_data(data_frame):
         "sex",
         "native-country",
     ]
+    print(" check file ", data_frame.head(
+        10))
     X_train, y_train, encoder, lb = process_data(data_frame.head(
         10), categorical_features=cat_features, label="salary", training=True,
         encoder=None, lb=None)
