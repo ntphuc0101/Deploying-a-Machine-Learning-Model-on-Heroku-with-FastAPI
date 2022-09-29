@@ -1,0 +1,816 @@
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- State-gov
+--------------------------------------------------                         
+Precision:	0.8368580060422961
+Recall:
+                        	0.7847025495750708
+F-beta score:	0.8099415204678363
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- Self-emp-not-inc
+--------------------------------------------------                         
+Precision:	0.8841463414634146
+Recall:
+                        	0.600828729281768
+F-beta score:	0.7154605263157895
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- Private
+--------------------------------------------------                         
+Precision:	0.8450741525423728
+Recall:
+                        	0.6429578883739674
+F-beta score:	0.7302895068085593
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- Federal-gov
+--------------------------------------------------                         
+Precision:	0.8529411764705882
+Recall:
+                        	0.7816711590296496
+F-beta score:	0.8157524613220816
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- Local-gov
+--------------------------------------------------                         
+Precision:	0.7978723404255319
+Recall:
+                        	0.7293354943273906
+F-beta score:	0.7620660457239627
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- ?
+--------------------------------------------------                         
+Precision:	0.8672566371681416
+Recall:
+                        	0.5130890052356021
+F-beta score:	0.6447368421052632
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- Self-emp-inc
+--------------------------------------------------                         
+Precision:	0.8700657894736842
+Recall:
+                        	0.8504823151125402
+F-beta score:	0.8601626016260162
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- Without-pay
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         workclass -- Never-worked
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         education -- Bachelors
+--------------------------------------------------                         
+Precision:	0.8
+Recall:
+                        	0.8770823953174246
+F-beta score:	0.8367697594501718
+
+--------------------------------------------------
+Performance on sliced column --                         education -- HS-grad
+--------------------------------------------------                         
+Precision:	0.8934169278996865
+Recall:
+                        	0.3402985074626866
+F-beta score:	0.49286640726329445
+
+--------------------------------------------------
+Performance on sliced column --                         education -- 11th
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.35
+F-beta score:	0.5185185185185185
+
+--------------------------------------------------
+Performance on sliced column --                         education -- Masters
+--------------------------------------------------                         
+Precision:	0.8667334669338678
+Recall:
+                        	0.9019812304483837
+F-beta score:	0.8840061318344404
+
+--------------------------------------------------
+Performance on sliced column --                         education -- 9th
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.14814814814814814
+F-beta score:	0.25806451612903225
+
+--------------------------------------------------
+Performance on sliced column --                         education -- Some-college
+--------------------------------------------------                         
+Precision:	0.8544600938967136
+Recall:
+                        	0.524873828406633
+F-beta score:	0.6502903081732917
+
+--------------------------------------------------
+Performance on sliced column --                         education -- Assoc-acdm
+--------------------------------------------------                         
+Precision:	0.8663594470046083
+Recall:
+                        	0.7094339622641509
+F-beta score:	0.7800829875518671
+
+--------------------------------------------------
+Performance on sliced column --                         education -- Assoc-voc
+--------------------------------------------------                         
+Precision:	0.8571428571428571
+Recall:
+                        	0.5318559556786704
+F-beta score:	0.6564102564102565
+
+--------------------------------------------------
+Performance on sliced column --                         education -- 7th-8th
+--------------------------------------------------                         
+Precision:	0.9090909090909091
+Recall:
+                        	0.25
+F-beta score:	0.392156862745098
+
+--------------------------------------------------
+Performance on sliced column --                         education -- Doctorate
+--------------------------------------------------                         
+Precision:	0.8706896551724138
+Recall:
+                        	0.9901960784313726
+F-beta score:	0.9266055045871561
+
+--------------------------------------------------
+Performance on sliced column --                         education -- Prof-school
+--------------------------------------------------                         
+Precision:	0.9230769230769231
+Recall:
+                        	0.9645390070921985
+F-beta score:	0.9433526011560694
+
+--------------------------------------------------
+Performance on sliced column --                         education -- 5th-6th
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.3125
+F-beta score:	0.47619047619047616
+
+--------------------------------------------------
+Performance on sliced column --                         education -- 10th
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.27419354838709675
+F-beta score:	0.430379746835443
+
+--------------------------------------------------
+Performance on sliced column --                         education -- 1st-4th
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.16666666666666666
+F-beta score:	0.2857142857142857
+
+--------------------------------------------------
+Performance on sliced column --                         education -- Preschool
+--------------------------------------------------                         
+Precision:	0.0
+Recall:
+                        	1.0
+F-beta score:	0.0
+
+--------------------------------------------------
+Performance on sliced column --                         education -- 12th
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.30303030303030304
+F-beta score:	0.4651162790697675
+
+--------------------------------------------------
+Performance on sliced column --                         marital-status -- Never-married
+--------------------------------------------------                         
+Precision:	0.9601593625498008
+Recall:
+                        	0.4908350305498982
+F-beta score:	0.6495956873315364
+
+--------------------------------------------------
+Performance on sliced column --                         marital-status -- Married-civ-spouse
+--------------------------------------------------                         
+Precision:	0.8364312267657993
+Recall:
+                        	0.7060669456066946
+F-beta score:	0.7657402155416905
+
+--------------------------------------------------
+Performance on sliced column --                         marital-status -- Divorced
+--------------------------------------------------                         
+Precision:	0.922077922077922
+Recall:
+                        	0.46004319654427644
+F-beta score:	0.6138328530259366
+
+--------------------------------------------------
+Performance on sliced column --                         marital-status -- Married-spouse-absent
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.4411764705882353
+F-beta score:	0.6122448979591837
+
+--------------------------------------------------
+Performance on sliced column --                         marital-status -- Separated
+--------------------------------------------------                         
+Precision:	0.9714285714285714
+Recall:
+                        	0.5151515151515151
+F-beta score:	0.6732673267326732
+
+--------------------------------------------------
+Performance on sliced column --                         marital-status -- Married-AF-spouse
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.4
+F-beta score:	0.5714285714285715
+
+--------------------------------------------------
+Performance on sliced column --                         marital-status -- Widowed
+--------------------------------------------------                         
+Precision:	0.9743589743589743
+Recall:
+                        	0.4470588235294118
+F-beta score:	0.6129032258064516
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Adm-clerical
+--------------------------------------------------                         
+Precision:	0.8263473053892215
+Recall:
+                        	0.5443786982248521
+F-beta score:	0.6563614744351962
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Exec-managerial
+--------------------------------------------------                         
+Precision:	0.8595
+Recall:
+                        	0.8734756097560976
+F-beta score:	0.8664314516129032
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Handlers-cleaners
+--------------------------------------------------                         
+Precision:	0.7647058823529411
+Recall:
+                        	0.3023255813953488
+F-beta score:	0.4333333333333333
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Prof-specialty
+--------------------------------------------------                         
+Precision:	0.8385744234800838
+Recall:
+                        	0.8606777837547068
+F-beta score:	0.8494823466949828
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Other-service
+--------------------------------------------------                         
+Precision:	0.926829268292683
+Recall:
+                        	0.2773722627737226
+F-beta score:	0.4269662921348315
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Sales
+--------------------------------------------------                         
+Precision:	0.8287220026350461
+Recall:
+                        	0.6398779247202442
+F-beta score:	0.7221584385763491
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Craft-repair
+--------------------------------------------------                         
+Precision:	0.8756613756613757
+Recall:
+                        	0.356297093649085
+F-beta score:	0.5065034429992348
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Transport-moving
+--------------------------------------------------                         
+Precision:	0.8362068965517241
+Recall:
+                        	0.303125
+F-beta score:	0.4449541284403669
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Farming-fishing
+--------------------------------------------------                         
+Precision:	0.8125
+Recall:
+                        	0.45217391304347826
+F-beta score:	0.5810055865921787
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Machine-op-inspct
+--------------------------------------------------                         
+Precision:	0.8648648648648649
+Recall:
+                        	0.256
+F-beta score:	0.39506172839506176
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Tech-support
+--------------------------------------------------                         
+Precision:	0.8339622641509434
+Recall:
+                        	0.7809187279151943
+F-beta score:	0.8065693430656935
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- ?
+--------------------------------------------------                         
+Precision:	0.8672566371681416
+Recall:
+                        	0.5130890052356021
+F-beta score:	0.6447368421052632
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Protective-serv
+--------------------------------------------------                         
+Precision:	0.8602941176470589
+Recall:
+                        	0.5545023696682464
+F-beta score:	0.6743515850144092
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Armed-Forces
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         occupation -- Priv-house-serv
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         relationship -- Not-in-family
+--------------------------------------------------                         
+Precision:	0.9459459459459459
+Recall:
+                        	0.49065420560747663
+F-beta score:	0.6461538461538461
+
+--------------------------------------------------
+Performance on sliced column --                         relationship -- Husband
+--------------------------------------------------                         
+Precision:	0.833634719710669
+Recall:
+                        	0.7010814464346062
+F-beta score:	0.7616337769619091
+
+--------------------------------------------------
+Performance on sliced column --                         relationship -- Wife
+--------------------------------------------------                         
+Precision:	0.8569254185692542
+Recall:
+                        	0.7557046979865771
+F-beta score:	0.8031383737517831
+
+--------------------------------------------------
+Performance on sliced column --                         relationship -- Own-child
+--------------------------------------------------                         
+Precision:	0.96
+Recall:
+                        	0.3582089552238806
+F-beta score:	0.5217391304347826
+
+--------------------------------------------------
+Performance on sliced column --                         relationship -- Unmarried
+--------------------------------------------------                         
+Precision:	0.9509803921568627
+Recall:
+                        	0.44495412844036697
+F-beta score:	0.60625
+
+--------------------------------------------------
+Performance on sliced column --                         relationship -- Other-relative
+--------------------------------------------------                         
+Precision:	0.8947368421052632
+Recall:
+                        	0.4594594594594595
+F-beta score:	0.6071428571428572
+
+--------------------------------------------------
+Performance on sliced column --                         race -- White
+--------------------------------------------------                         
+Precision:	0.8455155367231638
+Recall:
+                        	0.6728958830968105
+F-beta score:	0.7493936311712699
+
+--------------------------------------------------
+Performance on sliced column --                         race -- Black
+--------------------------------------------------                         
+Precision:	0.8617021276595744
+Recall:
+                        	0.627906976744186
+F-beta score:	0.7264573991031391
+
+--------------------------------------------------
+Performance on sliced column --                         race -- Asian-Pac-Islander
+--------------------------------------------------                         
+Precision:	0.8701298701298701
+Recall:
+                        	0.7282608695652174
+F-beta score:	0.7928994082840236
+
+--------------------------------------------------
+Performance on sliced column --                         race -- Amer-Indian-Eskimo
+--------------------------------------------------                         
+Precision:	0.84
+Recall:
+                        	0.5833333333333334
+F-beta score:	0.6885245901639344
+
+--------------------------------------------------
+Performance on sliced column --                         race -- Other
+--------------------------------------------------                         
+Precision:	0.7272727272727273
+Recall:
+                        	0.64
+F-beta score:	0.6808510638297872
+
+--------------------------------------------------
+Performance on sliced column --                         sex -- Male
+--------------------------------------------------                         
+Precision:	0.8420463032113518
+Recall:
+                        	0.6769738817172021
+F-beta score:	0.7505408553835913
+
+--------------------------------------------------
+Performance on sliced column --                         sex -- Female
+--------------------------------------------------                         
+Precision:	0.8755760368663594
+Recall:
+                        	0.6446140797285835
+F-beta score:	0.7425500732779677
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- United-States
+--------------------------------------------------                         
+Precision:	0.8447303489601692
+Recall:
+                        	0.6683865569655557
+F-beta score:	0.746282600233554
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Cuba
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.68
+F-beta score:	0.8095238095238095
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Jamaica
+--------------------------------------------------                         
+Precision:	0.6666666666666666
+Recall:
+                        	0.4
+F-beta score:	0.5
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- India
+--------------------------------------------------                         
+Precision:	0.875
+Recall:
+                        	0.875
+F-beta score:	0.875
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- ?
+--------------------------------------------------                         
+Precision:	0.872
+Recall:
+                        	0.7465753424657534
+F-beta score:	0.8044280442804429
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Mexico
+--------------------------------------------------                         
+Precision:	0.8333333333333334
+Recall:
+                        	0.45454545454545453
+F-beta score:	0.5882352941176471
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- South
+--------------------------------------------------                         
+Precision:	0.7142857142857143
+Recall:
+                        	0.625
+F-beta score:	0.6666666666666666
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Puerto-Rico
+--------------------------------------------------                         
+Precision:	0.6923076923076923
+Recall:
+                        	0.75
+F-beta score:	0.7199999999999999
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Honduras
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- England
+--------------------------------------------------                         
+Precision:	0.9130434782608695
+Recall:
+                        	0.7
+F-beta score:	0.7924528301886793
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Canada
+--------------------------------------------------                         
+Precision:	0.8571428571428571
+Recall:
+                        	0.6153846153846154
+F-beta score:	0.7164179104477612
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Germany
+--------------------------------------------------                         
+Precision:	0.8823529411764706
+Recall:
+                        	0.6818181818181818
+F-beta score:	0.7692307692307693
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Iran
+--------------------------------------------------                         
+Precision:	0.8421052631578947
+Recall:
+                        	0.8888888888888888
+F-beta score:	0.8648648648648649
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Philippines
+--------------------------------------------------                         
+Precision:	0.9375
+Recall:
+                        	0.7377049180327869
+F-beta score:	0.8256880733944955
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Italy
+--------------------------------------------------                         
+Precision:	0.8823529411764706
+Recall:
+                        	0.6
+F-beta score:	0.7142857142857143
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Poland
+--------------------------------------------------                         
+Precision:	0.7
+Recall:
+                        	0.5833333333333334
+F-beta score:	0.6363636363636365
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Columbia
+--------------------------------------------------                         
+Precision:	0.6666666666666666
+Recall:
+                        	1.0
+F-beta score:	0.8
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Cambodia
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.2857142857142857
+F-beta score:	0.4444444444444445
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Thailand
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Ecuador
+--------------------------------------------------                         
+Precision:	0.6666666666666666
+Recall:
+                        	0.5
+F-beta score:	0.5714285714285715
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Laos
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.5
+F-beta score:	0.6666666666666666
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Taiwan
+--------------------------------------------------                         
+Precision:	0.95
+Recall:
+                        	0.95
+F-beta score:	0.9500000000000001
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Haiti
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.75
+F-beta score:	0.8571428571428571
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Portugal
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.5
+F-beta score:	0.6666666666666666
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Dominican-Republic
+--------------------------------------------------                         
+Precision:	0.5
+Recall:
+                        	0.5
+F-beta score:	0.5
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- El-Salvador
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.8888888888888888
+F-beta score:	0.9411764705882353
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- France
+--------------------------------------------------                         
+Precision:	0.7692307692307693
+Recall:
+                        	0.8333333333333334
+F-beta score:	0.8
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Guatemala
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.3333333333333333
+F-beta score:	0.5
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- China
+--------------------------------------------------                         
+Precision:	0.8181818181818182
+Recall:
+                        	0.9
+F-beta score:	0.8571428571428572
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Japan
+--------------------------------------------------                         
+Precision:	0.8571428571428571
+Recall:
+                        	0.75
+F-beta score:	0.7999999999999999
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Yugoslavia
+--------------------------------------------------                         
+Precision:	0.8
+Recall:
+                        	0.6666666666666666
+F-beta score:	0.7272727272727272
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Peru
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.5
+F-beta score:	0.6666666666666666
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Outlying-US(Guam-USVI-etc)
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Scotland
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Trinadad&Tobago
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.5
+F-beta score:	0.6666666666666666
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Greece
+--------------------------------------------------                         
+Precision:	0.875
+Recall:
+                        	0.875
+F-beta score:	0.875
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Nicaragua
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Vietnam
+--------------------------------------------------                         
+Precision:	0.75
+Recall:
+                        	0.6
+F-beta score:	0.6666666666666665
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Hong
+--------------------------------------------------                         
+Precision:	0.8
+Recall:
+                        	0.6666666666666666
+F-beta score:	0.7272727272727272
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Ireland
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.6
+F-beta score:	0.7499999999999999
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Hungary
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	0.3333333333333333
+F-beta score:	0.5
+
+--------------------------------------------------
+Performance on sliced column --                         native-country -- Holand-Netherlands
+--------------------------------------------------                         
+Precision:	1.0
+Recall:
+                        	1.0
+F-beta score:	1.0

@@ -15,6 +15,12 @@ if "DYNO" in os.environ and os.path.isdir(".dvc"):
         exit("dvc pull failed")
     os.system("rm -r .dvc .apt/usr/lib/dvc")
 
+model_path = os.path.join(
+    os.path.dirname(
+        os.path.abspath(__file__)),
+    './model/model.pkl')
+
+model, encoder, lb, metrics = joblib.load(model_path)
 
 app = FastAPI()
 
@@ -40,10 +46,6 @@ class Data_Frame(BaseModel):
     hours_per_week: int = Field(..., example=40, alias="hours-per-week")
     native_country: str = Field(..., example="India", alias="native_country")
 
-
-# @app.get("/")
-# async def default():
-#     return "[Info] This Get method for FastAPI inference."
 
 @app.get("/", summary="Root path API", description="Census prediction API")
 async def root():
@@ -72,13 +74,12 @@ async def predict(data: Data_Frame):
         "sex",
         "native_country",
     ]
-    model_path = os.path.join(
-        os.path.dirname(
-            os.path.abspath(__file__)),
-        './model/model.pkl')
-
-    model, encoder, lb, metrics = joblib.load(model_path)
-
+    # model_path = os.path.join(
+    #     os.path.dirname(
+    #         os.path.abspath(__file__)),
+    #     './model/model.pkl')
+    #
+    global model, encoder, lb, metrics
     data_dict = data.dict(by_alias=True)
     # convert data into a dictionary, then a pandas dataframe
     census_df = pd.DataFrame.from_dict([data_dict])
